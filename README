@@ -3,15 +3,15 @@ który ma POST endpoint
 łyka json payload:
 
 {
-    clientId: uuid/str
-    message: "Zgarnij nagrodę!",
-    phoneNumber: "+4811111111111",
-    email: "aaa@google.com",
-    communicationPermissions: {
-      phone: true,
-      sms: false,
-      email: true,
-      pushNotification: false
+    "clientId": "e38250bb-ebba-42df-8538-7163c8f9579f",
+    "message": "Odbierz nagrodę w appce!",
+    "phoneNumber": "+4811111111111",
+    "email": "aaa@google.com",
+    "communicationPermissions": {
+      "phone": true,
+      "sms": false,
+      "email": true,
+      "pushNotification": false
     }
 }
 
