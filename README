@@ -1,0 +1,22 @@
+Napisz serwis notifciation
+który ma POST endpoint
+łyka json payload:
+
+{
+    clientId: uuid/str
+    message: "Zgarnij nagrodę!",
+    phoneNumber: "+4811111111111",
+    email: "aaa@google.com",
+    communicationPermissions: {
+      phone: true,
+      sms: false,
+      email: true,
+      pushNotification: false
+    }
+}
+
+
+Serwis ma za zadanie odbierać dużą ilość requestów (Dla uproszczenia rest zamiast KAFKI)
+Napisz serwis asynchronicznie aby strzał na dany endpoint był nonblocking.
+Serwis ma po przetworzeniu jsona na tym endpoincie w zaleznosci od zgód wyslac komunikat przez
+kanały na które klient wyraził zgodę.
